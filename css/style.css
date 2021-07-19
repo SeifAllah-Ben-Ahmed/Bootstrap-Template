@@ -60,6 +60,31 @@ ul {
     color: #fff;
     background-color: var(--main-color);
 }
+.effect-wrap .effect {
+    position: absolute;
+    z-index: -1;
+}
+.effect-wrap .effect-1 {
+    left: 20%;
+    top: 20%;
+    font-size: 20px;
+    color: var(--color-2);
+    animation: spin_01 5s linear infinite;
+}
+.effect-wrap .effect-2 {
+    right: 5%;
+    top: 10%;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    animation: spin_01 7s linear infinite;
+}
+.effect-wrap .effect-3 {
+    left: 5%;
+    bottom: 30%;
+    font-size: 25px;
+    color: var(--color-3);
+    animation: bounceTop_01 3s linear infinite;
+}
 @keyframes spin_01 {
     0% {
         transform: rotate(0deg);
@@ -91,12 +116,19 @@ ul {
         box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
     }
 }
+
 /*------------------------
 Navbar
 -------------------------*/
 .navbar {
-    background-color: var(--main-color);
+    background-color: transparent;
     padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.navbar.navbar-shrink {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color);
+    padding: 10px 0;
 }
 .navbar > .container {
     padding: 0 15px;
@@ -140,6 +172,9 @@ Home Section
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
+    border-radius: 0 0 200px 0;
+    position: relative;
+    z-index: 1;
 }
 .home-text h1 {
     font-size: 45px;
@@ -204,4 +239,57 @@ Home Section
     top: 30px;
     transform-origin: 170px 170px;
     animation: spin_01 10s linear infinite;
+}
+/*------------------------
+Video Popup
+-------------------------*/
+.video-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: all 0.5s ease;
+}
+.video-popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+.video-popup-inner {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+.video-popup .video-popup-close {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: var(--black-000);
+}
+.video-popup .iframe-box {
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.video-popup #iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
