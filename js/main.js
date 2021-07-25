@@ -96,4 +96,8 @@ $(document).ready(function () {
     $.scrollIt({
         topOffset: -50,
     });
+    /*-------------------------Navbar Collapse-------------------------- */
+    $(".nav-link").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+    });
 });
