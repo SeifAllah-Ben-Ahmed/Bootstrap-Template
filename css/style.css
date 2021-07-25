@@ -29,6 +29,17 @@ body {
     overflow-x: hidden;
     background-color: #fff;
 }
+body.dark {
+    background-color: var(--bg-dark);
+    --black-100: var(--bg-dark);
+    --black-000: var(--bg-dark);
+    --main-to-dark-color: var(--bg-dark);
+    --dark-to-main-color: var(--main-color);
+    --shadow-black-100: var(--shadow-black-300);
+    --black-alpha-100: rgba(255, 255, 255, 0.05);
+    --black-900: #fff;
+    --black-400: #bbb;
+}
 * {
     margin: 0;
     padding: 0;
@@ -187,7 +198,7 @@ Navbar
 }
 .navbar .navbar-brand {
     font-size: 30px;
-    color: var(--black-000);
+    color: #fff;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -195,7 +206,7 @@ Navbar
     margin-left: 40px;
 }
 .navbar .nav-item .nav-link {
-    color: var(--black-000);
+    color: #fff;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
@@ -209,7 +220,7 @@ Navbar
     bottom: 0;
     right: 0;
     height: 1px;
-    background-color: var(--black-000);
+    background-color: #fff;
     transition: all 0.5s ease;
     transform: scale(0);
 }
@@ -232,13 +243,13 @@ Home Section
     font-size: 45px;
     font-weight: 700;
     margin: 0 0 20px;
-    color: var(--black-000);
+    color: #fff;
 }
 .home-text p {
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
-    color: var(--black-000);
+    color: #fff;
     margin: 0;
 }
 .home .home-btn {
@@ -330,7 +341,7 @@ Video Popup
     text-align: center;
     line-height: 30px;
     cursor: pointer;
-    color: var(--black-000);
+    color: #fff;
 }
 .video-popup .iframe-box {
     height: 0;
@@ -413,7 +424,7 @@ Features Section
     opacity: 0;
 }
 .features .feature-item:hover .icon {
-    color: var(--black-000);
+    color: #fff;
     font-size: 20px;
 }
 .features .feature-item:hover .icon::before {
@@ -476,7 +487,7 @@ Fun Facts Section
 .fun-fact-item h3 {
     font-size: 40px;
     font-weight: 700;
-    color: var(--black-000);
+    color: #fff;
     margin: 0 0 5px;
 }
 .fun-fact-item span {
@@ -484,7 +495,7 @@ Fun Facts Section
     text-transform: uppercase;
     font-weight: 300;
     line-height: 26px;
-    color: var(--black-000);
+    color: #fff;
     margin: 0;
     display: block;
 }
@@ -524,7 +535,7 @@ App Download Section
     z-index: 1;
 }
 .app-download .section-title h2 {
-    color: var(--black-000);
+    color: #fff;
 }
 .app-download::before {
     content: "";
@@ -940,6 +951,27 @@ Footer
     color: rgba(255, 255, 255, 0.9);
     margin: 50px 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+/*------------------------
+Toggle Theme- Light & Dark
+-------------------------*/
+.toggle-theme {
+    position: fixed;
+    right: 0;
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    background-color: var(--dark-to-main-color);
+    z-index: 1200;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadow-black-300);
+}
+.toggle-theme i {
+    line-height: 40px;
 }
 /*------------------------
 Responsive
