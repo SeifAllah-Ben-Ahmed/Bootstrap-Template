@@ -92,4 +92,8 @@ $(document).ready(function () {
             },
         },
     });
+    /*-------------------------Page Scrolling - ScrollIt-------------------------- */
+    $.scrollIt({
+        topOffset: -50,
+    });
 });

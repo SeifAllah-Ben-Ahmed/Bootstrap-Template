@@ -34,22 +34,37 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">home</a>
+                            <a
+                                class="nav-link active"
+                                data-scroll-nav="0"
+                                href="#"
+                                >home</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">features</a>
+                            <a class="nav-link" href="#" data-scroll-nav="1"
+                                >features</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">screenshots</a>
+                            <a class="nav-link" data-scroll-nav="2" href="#"
+                                >screenshots</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">testimonials</a>
+                            <a class="nav-link" href="#" data-scroll-nav="4"
+                                >testimonials</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">pricing</a>
+                            <a class="nav-link" href="#" data-scroll-nav="5"
+                                >pricing</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#" data-scroll-nav="6"
+                                >contact</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -57,7 +72,11 @@
         </nav>
         <!-- Navbar End -->
         <!-- Home Section Start -->
-        <section class="home d-flex align-items-center">
+        <section
+            id="home"
+            class="home d-flex align-items-center"
+            data-scroll-index="0"
+        >
             <div class="effect-wrap">
                 <i class="fas fa-plus effect effect-1"></i>
                 <i class="fas fa-plus effect effect-2"></i>
@@ -75,7 +94,13 @@
                                 ipsa?
                             </p>
                             <div class="home-btn">
-                                <a href="#" class="btn btn-1"> download app</a>
+                                <a
+                                    href="#"
+                                    class="btn btn-1"
+                                    data-scroll-goto="3"
+                                >
+                                    download app</a
+                                >
                                 <button
                                     type="button"
                                     class="btn btn-1 video-play-btn"
@@ -99,7 +124,11 @@
         </section>
         <!-- Home Section End -->
         <!-- Features Section Start -->
-        <section class="features section-padding">
+        <section
+            id="features"
+            class="features section-padding"
+            data-scroll-index="1"
+        >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -222,7 +251,11 @@
         </section>
         <!-- Fun Facts Section End -->
         <!-- Screenshots Section Start -->
-        <section class="app-screenshots section-padding">
+        <section
+            id="screenshots"
+            class="app-Screenshots section-padding"
+            data-scroll-index="2"
+        >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -269,7 +302,7 @@
         </section>
         <!-- Screenshots Section End -->
         <!-- App Download Section Start -->
-        <section class="app-download section-padding">
+        <section class="app-download section-padding" data-scroll-index="3">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -375,7 +408,11 @@
         </section>
         <!-- How It Works Section End -->
         <!-- Testimonials Section Start -->
-        <section class="testimonials section-padding">
+        <section
+            id="testimonials"
+            class="testimonials section-padding"
+            data-scroll-index="4"
+        >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -488,9 +525,13 @@
         </section>
         <!-- Testimonials Section End -->
         <!-- Pricing Section Start -->
-        <section class="pricing section-padding">
+        <section
+            id="pricing"
+            class="pricing section-padding"
+            data-scroll-index="5"
+        >
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-title">
                             <h2>
@@ -787,7 +828,7 @@
         </section>
         <!-- FAQ Section End -->
         <!-- Contact Section Start -->
-        <section class="section-padding contact">
+        <section class="section-padding contact" data-scroll-index="6">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -915,11 +956,13 @@
                         <div class="footer-col">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">features</a></li>
-                                <li><a href="#">screenshot</a></li>
-                                <li><a href="#">pricing</a></li>
-                                <li><a href="#">testimonials</a></li>
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#features">features</a></li>
+                                <li><a href="#screenshots">screenshot</a></li>
+                                <li><a href="#pricing">pricing</a></li>
+                                <li>
+                                    <a href="#testimonials">testimonials</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
