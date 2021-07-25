@@ -893,3 +893,51 @@ Contact Section
 .contact-form .form-control:focus {
     border-color: var(--main-color);
 }
+/*------------------------
+Footer
+-------------------------*/
+.footer {
+    background-color: var(--main-color);
+    padding: 50px 0 0;
+}
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+.footer-col p {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 26px;
+    margin: 0;
+}
+.footer-col ul {
+    margin: 0;
+}
+.footer-col ul li:not(:last-child) {
+    margin: 10pxs;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.footer-col ul li a:hover {
+    padding-left: 10px;
+}
+.footer .copyright-text {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 50px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
