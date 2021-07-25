@@ -132,6 +132,16 @@ ul {
 .section-title h2 span {
     color: var(--main-color);
 }
+
+@keyframes zoomInOut_01 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
 @keyframes spin_01 {
     0% {
         transform: rotate(0deg);
@@ -179,7 +189,29 @@ ul {
 .owl-carousel button.owl-dot.active {
     background-color: var(--main-color);
 }
-
+/*------------------------
+Preloader
+-------------------------*/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-to-dark-color);
+}
+.preloader span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: var(--dark-to-main-color);
+    border-radius: 50%;
+    animation: zoomInOut_01 1s ease infinite;
+}
 /*------------------------
 Navbar
 -------------------------*/
